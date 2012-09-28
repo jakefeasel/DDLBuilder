@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<title>DDL Builder</title>
+		<script src="libs/require.js" data-main="main"></script>
+		<style>
+		textarea {
+			font-family: monospace;
+			font-size:12pt;
+			width: 100%;
+			height: 300px;
+		}
+		label {
+			font-weight: bold;
+		}
+		div {
+			float: left;
+			width: 50%;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>DDL Builder</h1>
+		<fieldset>
+			<legend>Convert Regularly-Formatted Text to Database Table Insert Scripts</legend>
+			
+			<div>
+				<label for="input">Input Text</label>
+				<textarea id="input"></textarea>
+			</div>
+			
+			<div>
+				<label for="output">Parse Result</label>
+				<textarea id="output"></textarea>
+			</div>
+			<hr>
+			<div>
+			<label for="dbType">Database Type</label>
+			<select id="dbType">
+				<option>MySQL</option>
+				<option>Oracle</option>
+				<option>PostgreSQL</option>
+				<option>SQLite</option>
+				<option>SQL Server</option>
+			</select>
+			|
+			<label for="terminator">Query Terminator</label>
+			<select id="terminator">
+				<option>;</option>
+				<option>GO</option>
+				<option>/</option>
+			</select>
+			
+			|
+			<input type="button" id="parseBtn" value="Parse!">
+			</div>
+			
+		</fieldset>
+		
+		<p>Brought to you by <a href="http://sqlfiddle.com">SQL Fiddle</a>.</p>
+	</body>
+</html>
