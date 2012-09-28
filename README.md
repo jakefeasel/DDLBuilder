@@ -14,7 +14,7 @@ This was originally developed as a utility for [SQL Fiddle](http://sqlfiddle.com
 
 ##Running the example
 
-I've provided an extremely simple plain HTML UI that makes uses of this library.  If you download this project into any web-accessible folder and browse to <DDLBuilder>/index.html, you will have the option to add input text and transform it into the expected DDL/DML.
+I've provided an [extremely simple plain HTML UI](http://htmlpreview.github.com/?https://github.com/jakefeasel/DDLBuilder/blob/master/index.html) that makes uses of this library.  If you download this project into any web-accessible folder and browse to <DDLBuilder>/index.html, you will have the option to add input text and transform it into the expected DDL/DML.
 
 This should provide sufficient clarity as to how the whole thing works.  If you are a bit lost, I suggest looking at /main.js; this contains the dependency loading, instantiation, UI bindings and execution calls that are used to make the library do useful things.  You'll need to do something quite similar to make it work in your project.
 
