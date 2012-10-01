@@ -21,7 +21,6 @@ define([
 				guessValueSeparators($this.attr('id'), $this.attr('valueSeparator'));
 				headerNames($this.attr('id'), $this.attr('headers'));
 				recordCount($this.attr('id'), $this.attr('recordCount'));
-				
 			});
 		});
 		
