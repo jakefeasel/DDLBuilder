@@ -20,7 +20,7 @@ requirejs.config({
 			exports: 'dateFormat'
 		},
 		QUnit: {
-			exports: "test"
+			exports: function () { return { "test": test, "equal": equal, "ok": ok } }
 		}
 	}
 	
