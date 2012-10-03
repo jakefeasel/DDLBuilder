@@ -66,7 +66,23 @@ page.open(system.args[1], function(status){
                 var el = document.getElementById('qunit-testresult');
                 console.log(el.innerText);
                 try {
-                    return el.getElementsByClassName('failed')[0].innerHTML;
+                	var tests = document.getElementById('qunit-tests').children;
+                	for (var i = 0; i<tests.length; i++)
+                	{
+                		if (tests[i].className == "fail")
+                		{
+                			var specificTests = tests[i].getElementsByTagName("ol")[0].children;
+                			for (var j=0;j<specificTests.length;j++)
+                			{
+                				if (specificTests[j].className == "fail")
+                				{
+                					console.log(tests[i].getElementsByClassName("test-name")[0].innerHTML +':' + specificTests[j].getElementsByClassName("test-message")[0].innerHTML  + ' failed');
+                				}
+                			}
+                		}
+                	}
+
+                	return el.getElementsByClassName('failed')[0].innerHTML;
                 } catch (e) { }
                 return 10000;
             });
