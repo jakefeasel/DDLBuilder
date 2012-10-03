@@ -1,5 +1,7 @@
 #DDL Builder
 
+[![Build Status](https://travis-ci.org/jakefeasel/DDLBuilder.png)](https://travis-ci.org/jakefeasel/DDLBuilder)
+
 ##About
 
 This code uses JavaScript to parse plain text, tabular data and transform it into valid DDL and DML scripts, usable for immediate insertion into a database.
