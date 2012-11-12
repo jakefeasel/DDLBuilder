@@ -27,7 +27,7 @@ define(
 		this.tableSuffix = '';
 
 
-		this.dateFormatMask = "UTC:yyyy-mm-dd HH:MM:ss";
+		this.dateFormatMask = "yyyy-mm-dd HH:MM:ss";
 		
 		this.charType = 'varchar';
 		this.intType = 'int';
