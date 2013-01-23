@@ -367,8 +367,9 @@ define(
 		if (colType == 'charType')
 			return new Handlebars.SafeString("'" + this.v.replace(/'/g, "''") + "'");
 		
-		if (colType == 'dateType')
+		if (colType == 'dateType') {
 			return new Handlebars.SafeString("'" + dateFormat("UTC:" + this.v, root.dateFormatMask) + "'");
+		}
 		
 		return this.v;
 	});

@@ -2,7 +2,7 @@
 requirejs.config({
 	paths: {
 		jQuery: 'libs/jquery',
-		Handlebars: 'libs/handlebars-1.0.0.beta.6',
+		Handlebars: 'libs/handlebars-1.0.8',
 		HandlebarsHelpers: 'ddl_builder/handlebarsHelpers',
 		DateFormat: 'libs/date.format',
 		DDLBuilder: 'ddl_builder'
